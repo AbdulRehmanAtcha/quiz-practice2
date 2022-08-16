@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Chapter 47(a) -->
+    <img src="before-pic.jpg" onMouseover="src='after-pic.jpg'">
+    <!-- Chapter 47(b) -->
+    <h1 onMouseover="alert('Be sure to get your shopping done today.');">World Ends Tomorrow</h1>
+    <!-- Chapter 47(c) -->
+    <a href="index.html" onMouseover="this.style.color='green';">Home Page</a>
+    <!-- Chapter 47(d) -->
+    <p id="loris" onMouseover="expand();">Slow Loris: Mouse over for more info</p>
+    <!-- Chapter 47(e) -->
+    <img src="before-pic.jpg" onMouseover="src='after-pic.jpg'" onMouseout="src='before-pic.jpg'">
+    <!-- Chapter 48(a) -->
+    Email:<br>
+    <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';">
+    <!-- Chapter 48(b) -->
+    Email:<br>
+    <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';"
+        onBlur="this.style.backgroundColor='white';">
+    <!-- Chapter 48(c) -->
+    Email:<br>
+    <input type="text" size="30" onFocus="makeFieldYellow();" onBlur="makeFieldWhite();">
+    <!-- Chapter 49(a) -->
+    <form>
+        Email:
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Chapter 49(b) -->
+    <form>
+        Email:
+        <input type="text" id="email">
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Chapter 49(c) -->
+    <form onSubmit="checkAddress('email');">
+        Email:
+        <input type="text" id="email">
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Chapter 50 (a)-->
+    <form>
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form>
+    <!-- Chapter 51(a) -->
+    <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p>
+    <!-- Chapter 52 (a) -->
+    <img src="blobfish.jpg" id="ugly" onClick="makeInvisible();">
+    <!-- Chapter 53(a) -->
+    <img src="before-pic.jpg" onMouseover="src='after-pic.jpg'">
+    <img src="before-pic.jpg" id="before" onMouseover="swapPic();">
+    <!-- Chapter 53(b) -->
+    <img src="before-pic.jpg" id="before" onMouseover="swapPic(id,'after-pic.jpg');">
+    <!-- Chapter 56(b) -->
+    <p>This bed is too small.</p>
+    <p>This bed is too big.</p>
+    <p>This bed is just right.</p>
+    
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
